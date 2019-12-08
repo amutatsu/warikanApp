@@ -27,7 +27,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="金額を入力" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIQ-lN-iXQ" userLabel="Bill Text Field">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="ex 1234.56" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RIQ-lN-iXQ" userLabel="Bill Text Field">
                                         <rect key="frame" x="0.0" y="60" width="414" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="bYd-wC-dYM"/>
@@ -67,6 +67,9 @@
                                                         <state key="normal" title="0%">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="taxButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wgX-73-tKN"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-00-0c1">
                                                         <rect key="frame" x="111.5" y="0.0" width="151" height="49"/>
@@ -79,6 +82,9 @@
                                                                 <integer key="value" value="0"/>
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="taxButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GkJ-c6-kBU"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWp-k0-8PS">
                                                         <rect key="frame" x="262.5" y="0.0" width="111.5" height="49"/>
@@ -86,6 +92,9 @@
                                                         <state key="normal" title="10%">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="taxButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fG3-o9-bpZ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -169,7 +178,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="billTextField" destination="RIQ-lN-iXQ" id="agn-iY-xFD"/>
+                        <outlet property="eightButton" destination="1FT-00-0c1" id="gqZ-Vo-7k1"/>
                         <outlet property="splitNumberLabel" destination="H6a-0C-HZY" id="tGg-BK-Tu4"/>
+                        <outlet property="tenButton" destination="hWp-k0-8PS" id="waq-KG-HDg"/>
+                        <outlet property="zeroButton" destination="GIq-hd-hQ2" id="alb-L5-ncW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
