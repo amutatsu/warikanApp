@@ -10,11 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var splitNumberLabel: UILabel!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
-
+    @IBAction func stepperPressed(_ sender: UIStepper) {
+        splitNumberLabel.text = String(Int(sender.value))
+    }
+    
 }
 
