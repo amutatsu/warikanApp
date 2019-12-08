@@ -68,7 +68,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-00-0c1">
+                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FT-00-0c1">
                                                         <rect key="frame" x="111.5" y="0.0" width="151" height="49"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="31"/>
                                                         <state key="normal" title="8%">
@@ -113,7 +113,7 @@
                                                     </label>
                                                     <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="COZ-LY-WSr">
                                                         <rect key="frame" x="176" y="0.0" width="100" height="30"/>
-                                                        <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.10720089820000001" green="0.41898947949999998" blue="0.84098881479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="30" id="2Np-IP-4Yh"/>
                                                             <constraint firstAttribute="width" constant="100" id="YbZ-Kv-WNU"/>
@@ -139,10 +139,23 @@
                                     <constraint firstItem="0ms-35-7Uy" firstAttribute="top" secondItem="ab7-JB-5gI" secondAttribute="top" constant="25" id="lNi-xV-Xlg"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jmd-jG-rK9">
+                                <rect key="frame" x="137" y="820" width="140" height="42"/>
+                                <color key="backgroundColor" red="0.10720089820000001" green="0.41898947949999998" blue="0.84098881479999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="Wt2-GH-Fil"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="ab7-JB-5gI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="5i9-Gc-zgo"/>
+                            <constraint firstItem="Jmd-jG-rK9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D2Y-tg-iD8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Jmd-jG-rK9" secondAttribute="bottom" id="FGk-2o-h0s"/>
                             <constraint firstItem="cD6-7U-Ofb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IYK-yF-KyQ"/>
                             <constraint firstItem="ab7-JB-5gI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="N5N-Ta-iTN"/>
                             <constraint firstItem="ab7-JB-5gI" firstAttribute="top" secondItem="cD6-7U-Ofb" secondAttribute="bottom" constant="50" id="g27-Sc-31M"/>
