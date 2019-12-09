@@ -244,6 +244,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yyd-5o-Gtw"/>
                     </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="rrG-0Z-Eu7" id="gjz-Ke-jYR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eYP-Uw-Owx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

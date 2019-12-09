@@ -53,8 +53,10 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-         // Get the new view controller using segue.destination.
-         // Pass the selected object to the new view controller.
+        
+        let destinationVC = segue.destination as! ResultViewController
+        destinationVC.result = result
+        
      }
 }
 
