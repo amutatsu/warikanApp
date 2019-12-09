@@ -211,6 +211,21 @@
                                 <rect key="frame" x="0.0" y="250" width="414" height="592"/>
                                 <color key="backgroundColor" red="0.51959419250000005" green="0.69999146459999995" blue="0.86442571879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-yw-xlQ">
+                                <rect key="frame" x="132" y="766" width="150" height="42"/>
+                                <color key="backgroundColor" red="0.069058261809999993" green="0.032139975580000001" blue="0.53232794999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="f6d-2X-dKo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Recalculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v7B-qJ-q8I"/>
+                                    <action selector="recalculateButtonPressed:" destination="nV0-St-zQO" eventType="touchUpInside" id="Cm8-cC-ay8"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-Hs-4Iu">
                                 <rect key="frame" x="30" y="278" width="354" height="72"/>
                                 <string key="text">2 people should pay
@@ -233,6 +248,7 @@
                             <constraint firstAttribute="bottom" secondItem="vng-iI-5cd" secondAttribute="bottom" id="Mk4-Bu-UaR"/>
                             <constraint firstItem="rrG-0Z-Eu7" firstAttribute="top" secondItem="2KV-lT-IVk" secondAttribute="bottom" constant="50" id="MwK-19-xyp"/>
                             <constraint firstItem="vng-iI-5cd" firstAttribute="top" secondItem="JsJ-Zx-hMO" secondAttribute="top" constant="250" id="Qlh-Op-qjd"/>
+                            <constraint firstItem="yyd-5o-Gtw" firstAttribute="bottom" secondItem="fPs-yw-xlQ" secondAttribute="bottom" id="SSb-ou-MIZ"/>
                             <constraint firstItem="yyd-5o-Gtw" firstAttribute="trailing" secondItem="D2d-Hs-4Iu" secondAttribute="trailing" constant="30" id="eIc-h3-64c"/>
                             <constraint firstItem="vng-iI-5cd" firstAttribute="leading" secondItem="yyd-5o-Gtw" secondAttribute="leading" id="ed9-aN-Our"/>
                             <constraint firstItem="D2d-Hs-4Iu" firstAttribute="top" secondItem="vng-iI-5cd" secondAttribute="topMargin" constant="20" id="enf-CE-Pub"/>
@@ -240,6 +256,7 @@
                             <constraint firstItem="rrG-0Z-Eu7" firstAttribute="leading" secondItem="yyd-5o-Gtw" secondAttribute="leading" id="jb6-L0-wjL"/>
                             <constraint firstItem="2KV-lT-IVk" firstAttribute="leading" secondItem="yyd-5o-Gtw" secondAttribute="leading" constant="50" id="jqi-2J-0NH"/>
                             <constraint firstItem="2KV-lT-IVk" firstAttribute="top" secondItem="JsJ-Zx-hMO" secondAttribute="topMargin" constant="50" id="pZI-WA-D8W"/>
+                            <constraint firstItem="fPs-yw-xlQ" firstAttribute="centerX" secondItem="JsJ-Zx-hMO" secondAttribute="centerX" id="w6E-yh-xMs"/>
                             <constraint firstItem="vng-iI-5cd" firstAttribute="trailing" secondItem="yyd-5o-Gtw" secondAttribute="trailing" id="zeH-4d-rTH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="yyd-5o-Gtw"/>
