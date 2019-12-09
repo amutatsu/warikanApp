@@ -10,10 +10,14 @@ import UIKit
 
 class ResultViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    var result = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        resultLabel.text = String(format: "%.0f", result)
     }
 
 }
