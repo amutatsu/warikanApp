@@ -20,4 +20,9 @@ class ResultViewController: UIViewController {
         resultLabel.text = String(format: "%.0f", result)
     }
 
+    
+    @IBAction func recalculateButtonPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
