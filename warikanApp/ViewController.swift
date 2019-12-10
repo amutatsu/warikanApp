@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     var taxPersentage = 0.0
     var totalBill = 0.0
     var numberOfPeople = 0
-    var result = 0.0
+    var lastResult = 0.0
+    var remainder = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func stepperPressed(_ sender: UIStepper) {
         splitNumberLabel.text = String(Int(sender.value))
+        numberOfPeople = Int(sender.value)
     }
     
     @IBAction func taxButtonPressed(_ sender: UIButton) {
@@ -48,15 +50,18 @@ class ViewController: UIViewController {
         
         if let bill = billTextField.text {
             totalBill = Double(bill)!
-            result = totalBill * (1 + taxPersentage/100)
+            let result = (totalBill * (1 + taxPersentage/100))
+            lastResult = result / Double(numberOfPeople)
+            remainder = Int(result) - (Int(lastResult) * numberOfPeople)
+            print(remainder)
         }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         let destinationVC = segue.destination as! ResultViewController
-        destinationVC.result = result
-        
+        destinationVC.result = lastResult
+        destinationVC.remainder = remainder
      }
 }
 
