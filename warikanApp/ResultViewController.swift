@@ -11,13 +11,21 @@ import UIKit
 class ResultViewController: UIViewController {
 
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var remainderLabel: UILabel!
     
     var result = 0.0
+    var remainder = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         resultLabel.text = String(format: "%.0f", result)
+        if remainder > 0 {
+            remainderLabel.text = "\(remainder) people have to pay \(Int(result) + 1)"
+        } else {
+            remainderLabel.text = ""
+        }
+        
     }
 
     

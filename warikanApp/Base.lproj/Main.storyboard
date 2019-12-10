@@ -211,6 +211,20 @@
                                 <rect key="frame" x="0.0" y="250" width="414" height="592"/>
                                 <color key="backgroundColor" red="0.51959419250000005" green="0.69999146459999995" blue="0.86442571879999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123.45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrG-0Z-Eu7">
+                                <rect key="frame" x="0.0" y="130" width="414" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-Hs-4Iu" userLabel="2 people have to pay 123">
+                                <rect key="frame" x="30" y="278" width="354" height="72"/>
+                                <string key="text">2 people have to pay
+123</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fPs-yw-xlQ">
                                 <rect key="frame" x="132" y="766" width="150" height="42"/>
                                 <color key="backgroundColor" red="0.069058261809999993" green="0.032139975580000001" blue="0.53232794999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -226,20 +240,6 @@
                                     <action selector="recalculateButtonPressed:" destination="nV0-St-zQO" eventType="touchUpInside" id="Cm8-cC-ay8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2d-Hs-4Iu">
-                                <rect key="frame" x="30" y="278" width="354" height="72"/>
-                                <string key="text">2 people should pay
-123</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123.45" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rrG-0Z-Eu7">
-                                <rect key="frame" x="0.0" y="130" width="414" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.069058261809999993" green="0.032139975580000001" blue="0.53232794999999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -262,6 +262,7 @@
                         <viewLayoutGuide key="safeArea" id="yyd-5o-Gtw"/>
                     </view>
                     <connections>
+                        <outlet property="remainderLabel" destination="D2d-Hs-4Iu" id="lb1-8B-yzW"/>
                         <outlet property="resultLabel" destination="rrG-0Z-Eu7" id="gjz-Ke-jYR"/>
                     </connections>
                 </viewController>
